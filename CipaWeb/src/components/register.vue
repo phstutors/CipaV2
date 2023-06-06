@@ -1,6 +1,7 @@
 <template>
+
+<div class="app">
   <div class="content">
-    
     <section class="left-side">
       <div class="agroup-content">
         <img src="public/FundoCipa.png" alt="" srcset="">
@@ -51,10 +52,20 @@
 
 
   </div>
+  </div>
 </template>
 
 <style scoped>
+.app {
+  width: 100%;
+  height: 100vh;
+  margin:0;
+  display: flex!important;
+  justify-items: center!important;
+  justify-content: center!important;
+  align-items: center!important;
 
+}
 .teste {
   width: 100%;
   height: 100vh;
@@ -70,6 +81,7 @@ font-size: 15pt;
 h2,p{
 color: #1E2F40!important;
 }
+
 .content {
   height: 80%;
   width: 80%;

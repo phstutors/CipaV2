@@ -1,4 +1,5 @@
 <template>
+<div class="app">
   <div class="content">
     
     <section class="left-side">
@@ -35,10 +36,21 @@
 
 
   </div>
+   </div>
 </template>
 
 <style scoped>
 
+.app {
+  width: 100%;
+  height: 100vh;
+  margin:0;
+  display: flex!important;
+  justify-items: center!important;
+  justify-content: center!important;
+  align-items: center!important;
+
+}
 .teste {
   width: 100%;
   height: 100vh;
@@ -147,6 +159,24 @@ animation: pulseAnimation 2s ease-in-out infinite!important;
 0% { transform: scale(1); }
 50% { transform: scale(1.1); }
 100% { transform: scale(1); }
+}
+@media (max-width: 768px) {
+  .agroup-content img {
+    width: 280px;
+  }
+}
+
+/* CSS for mobile devices */
+@media (max-width: 490px) {
+  .left-side {
+   display: none;
+  }
+  .right-side{
+    width: 100%;
+  }
+  .right-side img{
+    width: 180px;
+  }
 }
 </style>
 <script>
