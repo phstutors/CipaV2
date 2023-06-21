@@ -55,6 +55,13 @@
 
 <style scoped>
 
+
+.right-side p{
+font-size: 15pt;
+}
+h2,p{
+color: #1E2F40!important;
+}
 .teste {
   width: 100%;
   height: 100vh;
@@ -64,40 +71,43 @@
   background-color: #F1F4FF;
   font-family: 'Red Hat Display', sans-serif!important;
 }
-.right-side p{
-font-size: 15pt;
-}
-h2,p{
-color: #1E2F40!important;
-}
+
 .content {
-  height: 80%;
-  width: 80%;
+  width: 100%;
+  height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background-color: #F1F4FF;
+  font-family: 'Red Hat Display', sans-serif!important;
 }
 
 .left-side {
+  width: 40%;
+  height: 78%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 50%;
-  flex-direction: column;
   background-color: antiquewhite;
-
+  border-bottom-left-radius: 25px;
+ border-top-left-radius: 25px;
 }
 
 .right-side {
-  width: 50%;
+  width: 40%;
+  height: 78%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   justify-items: center;
-  flex-direction: column;
   border-left: 0.1rem solid black;
   background-color: antiquewhite;
-  
+  border-bottom-right-radius: 25px;
+ border-top-right-radius: 25px;
 }
 .agroup-content img{
   width: 720px;
